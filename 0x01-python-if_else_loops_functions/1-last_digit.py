@@ -14,5 +14,5 @@ else:
     message = f"and is less than 6 and not 0"
 
 # Print the result
-print(f"Last digit of {number} is {last_digit} {message}\n")
+print(f"Last digit of {number} is {last_digit} {message}")
 
