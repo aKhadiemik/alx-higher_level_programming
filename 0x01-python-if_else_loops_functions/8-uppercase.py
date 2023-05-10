@@ -3,5 +3,5 @@ def uppercase(string):
     chars = list(string)
     for i in range(len(chars)):
         if 'a' <= chars[i] <= 'z':
-            chars[i] = chr(ord(chars[i]) - 32)
+            chars[i] = '{}'.format(chars[i].upper()) 
     print(''.join(chars))
