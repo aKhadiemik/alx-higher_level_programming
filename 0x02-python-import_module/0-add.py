@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-import add_0
+import add_0 as addtn
 
 
 def main():
     a = 1
     b = 2
 
-    result = add_0.add(a, b)
+    result = addtn.add(a, b)
     print("{} + {} = {}".format(a, b, result))
 
 
