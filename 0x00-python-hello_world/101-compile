@@ -1,7 +1,2 @@
 #!/bin/bash
-filename=$PYFILE
-compiled_filename="${filename%.*}.pyc"
-python -m py_compile "$filename"
-# Rename the compiled file to the output filename
-mv "__pycache__/${filename%.*}.cpython-*.pyc" "$compiled_filename"
-rmdir "__pycache__"
+python -c "import py_compile; py_compile.compile('$PYFILE', '$PYFILEc')"
