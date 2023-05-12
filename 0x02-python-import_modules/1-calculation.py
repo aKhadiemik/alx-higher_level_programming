@@ -2,15 +2,15 @@
 
 if __name__ == "__main__":
     
-    import calculator_1 as calc
+    from calculator_1 import add, sub, mul, div 
 
     a = 10
     b = 5
 
-    add_result = calc.add(a, b)
-    sub_result = calc.sub(a, b)
-    mul_result = calc.mul(a, b)
-    div_result = calc.div(a, b)
+    add_result = add(a, b)
+    sub_result = sub(a, b)
+    mul_result = mul(a, b)
+    div_result = div(a, b)
 
     print("The result of adding {} and {} is {}".format(a, b, add_result))
     print("The result of subtracting {} from {} is {}".format(b, a, sub_result))
