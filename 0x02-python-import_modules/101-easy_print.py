@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-import sys
+#!/usr/bin/python3
 
-sys.stdout.write("#pythoniscool\n")
+import os
+
+os.write(1, b"#pythoniscool\n")
 
