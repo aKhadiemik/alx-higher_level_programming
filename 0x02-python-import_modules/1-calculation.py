@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Prints operands and results of calculator_1 operations"""
+    
     from calculator_1 import add, sub, mul, div 
     
     a = 10
