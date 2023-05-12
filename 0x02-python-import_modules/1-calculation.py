@@ -12,7 +12,7 @@ if __name__ == "__main__":
     mul_result = mul(a, b)
     div_result = div(a, b)
 
-    print("The result of adding {} and {} is {}".format(a, b, add_result))
-    print("The result of subtracting {} from {} is {}".format(b, a, sub_result))
-    print("The result of multiplying {} and {} is {}".format(a, b, mul_result))
-    print("The result of dividing {} by {} is {}".format(a, b, div_result))
+    print("{} + {} = {}".format(a, b, add_result))
+    print("{} - {} = {}".format(a, b, sub_result))
+    print("{} * {} = {}".format(a, b, mul_result))
+    print("{} / {} = {}".format(a, b, div_result))
