@@ -7,5 +7,5 @@
 
 def print_reversed_list_integer(my_list=[]):
     if my_list:
-            for i in reversed(range(len(my_list))):
-                print("{0:d}".format(my_list[i]))
+            for i in reversed(my_list):
+                print("{0:d}".format(i))
