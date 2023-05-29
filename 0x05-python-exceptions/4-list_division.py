@@ -12,7 +12,8 @@ def list_division(my_list_1, my_list_2, list_length):
             if i < len(my_list_1) and i < len(my_list_2):
                 numerator = my_list_1[i]
                 denominator = my_list_2[i]
-                if isinstance(numerator, (int, float)) and isinstance(denominator, (int, float)):
+                if isinstance(numerator, (int, float)) and \
+                        isinstance(denominator, (int, float)):
                     quotient = numerator / denominator
                 else:
                     print("wrong type")
