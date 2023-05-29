@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    nction that divides 2 integers and prints the result
+    function that divides 2 integers and prints the result
 '''
 
 
