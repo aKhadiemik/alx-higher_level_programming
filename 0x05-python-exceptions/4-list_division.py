@@ -5,24 +5,22 @@
 
 
 def list_division(my_list_1, my_list_2, list_length):
-    result = []
+    new_list = []
     for i in range(list_length):
         try:
-            quotient = 0
             if i < len(my_list_1) and i < len(my_list_2):
-                numerator = my_list_1[i]
-                denominator = my_list_2[i]
-                if isinstance(numerator, (int, float)) and \
-                        isinstance(denominator, (int, float)):
-                    quotient = numerator / denominator
-                else:
-                    print("wrong type")
-            elif i >= len(my_list_1):
-                print("out of range")
+                div = my_list_1[i] / my_list_2[i]
             else:
-                quotient = 0
+                raise IndexError
+        except TypeError:
+            print("wrong type")
+            div = 0
         except ZeroDivisionError:
             print("division by 0")
+            div = 0
+        except IndexError:
+            print("out of range")
+            div = 0
         finally:
-            result.append(quotient)
-    return result
+            new_list.append(div)
+    return new_list
