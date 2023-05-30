@@ -13,7 +13,7 @@ class Square:
         __position (tuple): The position of the square.
 
     Methods:
-        __init__(self, size=0, position=(0, 0)): Initializes a new instance of the Square class.
+        __init__(self, size=0, position=(0, 0)): Inits new instance of Square
         area(self): Calculates and returns the area of the square.
         size(self): Getter method to retrieve the size of the square.
         size(self, value): Setter method to set the size of the square.
@@ -32,8 +32,8 @@ class Square:
             position (tuple): The position of the square. Defaults to (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of two positive integers.
-            ValueError: If size is less than 0 or position does not contain positive integers.
+            TypeError: If size not integer | position not tuple of 2 +ve ints.
+            ValueError: If size < 0 or position does not contain +ve integers.
         """
         self.__size = size
         self.__position = position
@@ -110,7 +110,7 @@ class Square:
         Prints the square using the '#' character.
 
         If size is equal to 0, an empty line is printed.
-        The position is used to offset the square's position by printing spaces.
+        position - offset the square's position by printing spaces.
         """
         if self.__size == 0:
             print()
@@ -119,4 +119,3 @@ class Square:
                 print()
             for _ in range(self.__size):
                 print(" " * self.__position[0] + "#" * self.__size)
-
