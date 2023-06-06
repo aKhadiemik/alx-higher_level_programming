@@ -1,5 +1,1 @@
-None
-0
-1
-No new integer object
 0
