@@ -7,7 +7,7 @@ def append_write(filename="", text=""):
         Append string to end of text file, return number of characters added.
 
         Args:
-            filename (str): name of file to which the string should be appended.
+            filename (str): name of file to which string should be appended.
             text (str): The string to be appended to the file.
 
         Returns:
