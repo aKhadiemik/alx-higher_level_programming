@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+'''Provides fn to add command line args to list and save them to file'''
 sys = __import__('sys')
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-'''Provides fn to add command line args to list and save them to file'''
 
 
 def add_items_to_list_and_save():
