@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 '''Provides fn to convert JSON string to corresponding data structure'''
+import json
 
 
 def from_json_string(my_str):
