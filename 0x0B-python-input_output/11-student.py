@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    Provides class with methods to operate on JSON object    
+    Provides class with methods to operate on JSON object
 '''
 
 
@@ -35,11 +35,12 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            return {attr: getattr(self, attr) for attr in attrs if hasattr(self, attr)}
+            return {attr: getattr(self, attr)
+                    for attr in attrs if hasattr(self, attr)}
 
     def reload_from_json(self, json):
         """
-        Replace all attributes of the Student instance with values from a dictionary.
+        Replace all attributes of Student instance with values from dict.
 
         Args:
         json (dict): A dictionary containing attribute-value pairs.
