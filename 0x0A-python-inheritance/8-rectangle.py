@@ -14,6 +14,11 @@ class Rectangle(BaseGeometry):
     Attributes:
     __width (int): The width of the rectangle.
     __height (int): The height of the rectangle.
+
+
+    Raises:
+    TypeError: if the width/height is not an integer.
+    ValueError: if the width/height is less than 0.
     """
 
     def __init__(self, width, height):
@@ -23,10 +28,6 @@ class Rectangle(BaseGeometry):
         Args:
         width (int): The width of the rectangle.
         height (int): The height of the rectangle.
-
-        Raises:
-        TypeError: if the value is not an integer.
-        ValueError: if the value is less than 0.
         """
         self.__width = self.integer_validator("width", width)
         self.__height = self.integer_validator("height", height)
