@@ -1,4 +1,4 @@
-#!//bin/python3
+#!/usr/bin/python3
 """
     Provides fn that checks whether object is instance of specified
         class/subclass
