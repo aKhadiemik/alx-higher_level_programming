@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-'''Provides BaseGeometry class and methods area and
+'''
+    Provides BaseGeometry class and methods area and
     integer_validator.
 '''
 
@@ -31,7 +32,7 @@ class BaseGeometry:
         TypeError: If the value is not an integer.
         ValueError: If the value is less than or equal to 0.
         """
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
