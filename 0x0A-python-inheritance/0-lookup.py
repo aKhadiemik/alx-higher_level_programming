@@ -15,5 +15,4 @@ def lookup(obj):
     Returns:
     A list of attributes that are not callable or start with '__'.
     """
-    return [attr for attr in dir(obj) if not callable(getattr(obj, attr))
-            or attr.startswith("__")]
+    return (dir(obj))
