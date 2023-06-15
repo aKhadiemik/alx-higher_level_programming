@@ -6,6 +6,6 @@
 
 def lookup(obj):
     """
-    Retrieve a list of attributes from an object that are not callable
+    Retrieve a list of attributes from an object that are not callable.
     """
     return (dir(obj))
