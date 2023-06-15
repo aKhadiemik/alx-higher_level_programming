@@ -78,6 +78,7 @@ def compute_metrics():
 
     except KeyboardInterrupt:
         print_metrics(total_size, status_codes)
+        raise 
 
 
 compute_metrics()
