@@ -1,18 +1,11 @@
 #!/usr/bin/python3
 """
-    Return the list of available attributes and methods of an object.
+    Defines a function to list available attributes & methods of object.
 """
 
 
 def lookup(obj):
     """
-    Retrieve a list of attributes from an object that are not callable or
-    start with '__'.
-
-    Args:
-    obj: An object to perform the attribute lookup on.
-
-    Returns:
-    A list of attributes that are not callable or start with '__'.
+    Retrieve a list of attributes from an object that are not callable
     """
     return (dir(obj))
