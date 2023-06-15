@@ -9,6 +9,7 @@ class BaseGeometry:
     Represents the base geometry for calculating area
     and validating integer values.
     """
+
     def area(self):
         """
         Calculates the area of a geometry.
