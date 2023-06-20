@@ -19,7 +19,7 @@ class TestsBase_cases(unittest.TestCase):
         No id.
         """
         base = Base()
-        self.assertEqual(99, base.id)
+        self.assertEqual(1, base.id)
 
     def test_id(self):
         """
