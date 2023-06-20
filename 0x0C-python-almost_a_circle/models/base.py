@@ -49,6 +49,10 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """
+        Saves JSON string of list_objs to a file
+
+        Args:
+        list_objs: list of base classes
         """
         file_name = cls.__name__ + ".json"
         with open(file_name, "w") as jsonfile:
@@ -61,6 +65,10 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """
+        Returns list of JSON strings.
+
+        Args:
+        json_string (JSON): json string to parse
         """
         json_string_list = []
 
@@ -74,6 +82,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """
+        Returns instance of a class from attributes in dictionary
+
+        Args:
+        dictionary: holds attribute values
         """
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
@@ -86,6 +98,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """
+        Returns list of shape instances from json file.
         """
         file_name = cls.__name__ + ".json"
         list_of_instances = []
@@ -102,6 +115,10 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """
+        Saves CSV string of list_objs to file.
+
+        Args:
+        list_objs: list of base classes
         """
         filename = cls.__name__ + ".csv"
         with open(filenmae, "w", newline="") as csvfile:
@@ -119,6 +136,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """
+        Returns list of shape instances from csv file.
         """
         filename = cls.__name__ + ".csv"
         try:
@@ -137,5 +155,6 @@ class Base:
     @staticmethod
     def draw(list_rectangles, list_squares):
         """
+        Draws list of rectangles, squares.
         """
         pass
