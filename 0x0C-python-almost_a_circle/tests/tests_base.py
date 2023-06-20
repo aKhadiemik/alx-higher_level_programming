@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 import unittest
 from models.base import Base
 from models.square import Square
@@ -14,6 +14,7 @@ class tests_base(unittest.TestCase):
         """"""
         base = Base(99)
         self.assertEqual(99, base.id)
+
 
 class tests_square(unittest.TestCase):
     """"""
