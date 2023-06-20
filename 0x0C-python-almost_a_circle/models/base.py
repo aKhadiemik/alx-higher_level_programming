@@ -10,12 +10,20 @@ import os
 
 class Base:
     """
+    Defines the base class
+
+    Attributes:
+    __nb_objects (int): holds number of objects created
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
         """
+        Initialization for the base class
+
+        Args:
+        id (int): base class id
         """
         if id is not None:
             self.id = id
@@ -26,6 +34,10 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """
+        Returns JSON string representaiton of list_dictionaries
+
+        Args:
+        list_dictionaries (dict): input list of dictionaries
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"

@@ -6,8 +6,28 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """"""
+    """
+    Defines a square.
+
+    Args:
+    size (int): square side size
+    x (int): x coordinate
+    y (int): y coordinate
+    id (int): id for the square
+    """
     def __init__(self, size, x=0, y=0, id=None):
+        """
+        This initializes the Square object.
+
+        Args:
+        size (int): Size of the square.
+        [optional] x (int): X-coordinate of the square's position.
+        Defaults to 0.
+        [optional] y (int): Y-coordinate of the square's position.
+        Defaults to 0.
+        [optional] id (int): Unique identifier for the square.
+        Defaults to None.
+        """
         self.size = size
         self.x = x
         self.y = y
@@ -15,17 +35,30 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """"""
+        """
+        Prints string representation of square.
+        """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
     def size(self):
-        """"""
+        """
+        Getter for size.
+        """
         return self.__width
 
     @size.setter
     def size(self, value):
-        """"""
+        """
+        setter for size
+
+        Args:
+        value (int): new value to set
+
+        Raises:
+        TypeError: if value is not integer
+        ValueError: if value is less than zero
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -34,7 +67,15 @@ class Square(Rectangle):
         self.__height = value
 
     def update(self, *args, **kwargs):
-        """"""
+        """
+        Assign attributes based on no-keyworded and key-worded arguments.
+
+        Args:
+        *args: No-keyworded arguments representing the id, size,x,
+        and y attributes.
+        **kwargs: Key-worded arguments representing the attributes
+        to be updated.
+        """
         if args and len(args) != 0:
             n = 0
             for arg in args:
@@ -63,7 +104,12 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
-        """"""
+        """
+        Return the dictionary representation of the square.
+
+        Returns:
+        dict: Dictionary containing the attributes of the square.
+        """
         return {
             'id': self.id,
             'size': self.size,
