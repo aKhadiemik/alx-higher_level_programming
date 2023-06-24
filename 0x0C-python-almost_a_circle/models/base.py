@@ -52,6 +52,7 @@ class Base:
         Saves JSON string of list_objs to a file
 
         Args:
+        cls: class object.
         list_objs: list of base classes
         """
         file_name = cls.__name__ + ".json"
@@ -85,7 +86,8 @@ class Base:
         Returns instance of a class from attributes in dictionary
 
         Args:
-        dictionary: holds attribute values
+        cls: class object.
+        dictionary: holds attribute values.
         """
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
@@ -98,7 +100,16 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """
-        Returns list of shape instances from json file.
+        Load instances from a JSON file.
+
+        Args:
+        cls: class object.
+
+        Returns:
+        list: A list of instances created from the JSON data.
+
+        Raises:
+        FileNotFoundError: If the specified file does not exist.
         """
         file_name = cls.__name__ + ".json"
         list_of_instances = []
@@ -118,10 +129,11 @@ class Base:
         Saves CSV string of list_objs to file.
 
         Args:
+        cls: class object.
         list_objs: list of base classes
         """
         filename = cls.__name__ + ".csv"
-        with open(filenmae, "w", newline="") as csvfile:
+        with open(filename, "w", newline="") as csvfile:
             if list_objs is None or list_objs == []:
                 csvfile.write("[]")
             else:
@@ -136,7 +148,13 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """
-        Returns list of shape instances from csv file.
+        Load objects from a CSV file.
+
+        Returns:
+        A list of objects created from the CSV data.
+
+        Raises:
+        IOError: If the CSV file cannot be opened or read.
         """
         filename = cls.__name__ + ".csv"
         try:
@@ -156,5 +174,9 @@ class Base:
     def draw(list_rectangles, list_squares):
         """
         Draws list of rectangles, squares.
+
+        Args:
+        list_rectangles: input with list of rectangles.
+        list_squares: input with list of squares.
         """
         pass

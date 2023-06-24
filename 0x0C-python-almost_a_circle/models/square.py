@@ -37,6 +37,9 @@ class Square(Rectangle):
     def __str__(self):
         """
         Prints string representation of square.
+
+        Returns:
+            str: Formatted string representation of the Square object.
         """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
@@ -44,6 +47,9 @@ class Square(Rectangle):
     def size(self):
         """
         Getter for size.
+
+        Returns:
+        int: The size of the Square.
         """
         return self.__width
 
