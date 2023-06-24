@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+    Provides class that defines Square
+"""
+
+
 from models.rectangle import Rectangle
 """
     Provides class that defines Square
