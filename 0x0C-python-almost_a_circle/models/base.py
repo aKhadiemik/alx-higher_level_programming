@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+    Provides a class to serve as the foundation. Other classes
+    to inherit from this.
+"""
+
+
 import csv
 import json
 import os
@@ -15,7 +21,6 @@ class Base:
     Attributes:
     __nb_objects (int): holds number of objects created
     """
-
     __nb_objects = 0
 
     def __init__(self, id=None):
