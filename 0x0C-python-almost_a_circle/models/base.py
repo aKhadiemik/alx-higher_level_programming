@@ -38,6 +38,12 @@ class Base:
 
         Args:
         list_dictionaries (dict): input list of dictionaries
+
+        Returns:
+        str: The JSON string representation of the list of dictionaries.
+
+        Raises:
+        TypeError: If list_dictionaries is not a list of dictionaries or None.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
@@ -70,6 +76,9 @@ class Base:
 
         Args:
         json_string (JSON): json string to parse
+
+        Returns:
+        json_string_list: list of JSON strings.
         """
         json_string_list = []
 
@@ -88,6 +97,9 @@ class Base:
         Args:
         cls: class object.
         dictionary: holds attribute values.
+
+        Returns:
+        dummy: instance of class from attributes in dictionary.
         """
         if cls.__name__ == 'Rectangle':
             dummy = cls(1, 1)
