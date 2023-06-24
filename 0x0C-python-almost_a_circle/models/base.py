@@ -182,13 +182,13 @@ class Base:
         except IOError:
             return []
 
-    @staticmethod
-    def draw(list_rectangles, list_squares):
-        """
-        Draws list of rectangles, squares.
-
-        Args:
-        list_rectangles: input with list of rectangles.
-        list_squares: input with list of squares.
-        """
-        pass
+#    @staticmethod
+#    def draw(list_rectangles, list_squares):
+#        """
+#        Draws list of rectangles, squares.
+#
+#        Args:
+#        list_rectangles: input with list of rectangles.
+#        list_squares: input with list of squares.
+#        """
+#        pass
