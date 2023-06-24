@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+    Provides class defining rectangle
+"""
+
+
 from models.base import Base
 """
     Provides class defining rectangle
