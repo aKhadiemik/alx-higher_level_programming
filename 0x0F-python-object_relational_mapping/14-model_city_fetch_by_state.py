@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" prints the State object with the passed arguments 
+""" prints the State object with the passed arguments
 """
 import sys
 from model_state import Base, State
