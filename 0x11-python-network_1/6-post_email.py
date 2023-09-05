@@ -3,7 +3,7 @@
 Script accepts URL, sends request to it
  Output: X-Request-Id header variable
 """
-from sys import argv 
+from sys import argv
 import requests
 
 if __name__ == "__main__":
