@@ -3,12 +3,13 @@
 Script accepts URL, sends request to it
  Output: X-Request-Id header variable
 """
-import sys
-import urllib.request
+from sys import argv 
+import requests
 
 if __name__ == "__main__":
-    url = sys.argv[1]
+    url = argv[1]
+    email = argv[2]
+    values = {'email': email}
 
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as response:
-        print(dict(response.headers).get("X-Request-Id"))
+    request = requests.post(url, data=values)
+    print(request.text)
